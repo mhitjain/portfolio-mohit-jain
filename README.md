@@ -1,4 +1,4 @@
-# Mohit's Portfolio
+# Mohit Jain's Portfolio
 
 A modern, comprehensive portfolio website built with React, Vite, and Tailwind CSS showcasing real projects, skills, and interests.
 
