@@ -67,7 +67,7 @@ export default function Portfolio() {
     },
     {
       title: "Job Search Automation Tool",
-      description: "Comprehensive job search platform with modern React + TypeScript dashboard. Automatically scrapes jobs from LinkedIn, Indeed, Glassdoor using Selenium, performs AI-powered matching against resume using RAG systems, and provides relevance scoring with detailed reasoning. Includes AI chatbot assistant, automated scheduling every 3 hours, and one-command setup script with visual configuration UI.",
+      description: "Comprehensive job search platform with modern React + TypeScript dashboard. Automatically scrapes jobs from the web using Selenium, performs AI-powered matching against resume using RAG systems, and provides relevance scoring with detailed reasoning. Includes AI chatbot assistant, automated scheduling every 3 hours, and one-command setup script with visual configuration UI.",
       tech: ["React", "TypeScript", "Vite", "Python", "Selenium", "Groq/Gemini AI", "SQLite", "Flask"],
       icon: <Database className="w-6 h-6" />,
       gradient: "from-purple-500 to-pink-500",
