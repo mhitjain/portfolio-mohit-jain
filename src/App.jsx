@@ -278,7 +278,7 @@ export default function Portfolio() {
                 Get in Touch
                 <ChevronRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
-              <a href="https://github.com/mhitjain/resume/blob/f159530623e2d4f66d1386f70e08be50d5b64e22/Mohit%20Jain.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-6 py-3 border border-slate-400 dark:border-slate-600 rounded-lg hover:border-blue-500 hover:bg-blue-500/10 transition-all duration-300 backdrop-blur-sm">
+              <a href="https://github.com/mhitjain/resume/blob/292da5241dd69bdddba598c82d14b4a5587f64be/MohitJain.pdf" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 px-6 py-3 border border-slate-400 dark:border-slate-600 rounded-lg hover:border-blue-500 hover:bg-blue-500/10 transition-all duration-300 backdrop-blur-sm">
                 <ExternalLink className="w-5 h-5" />
                 Download Resume
               </a>
