@@ -143,44 +143,36 @@ export default function Portfolio() {
 
     const experience = [
     {
-      role: "Software Development Engineer Intern",
-      company: "TekLink International (HGS)",
+      role: "Software & AI Engineering Intern",
+      company: "Hinduja Global Solutions (HGS)",
       period: "Feb 2025 – Aug 2025",
       location: "Boston, MA",
       highlights: [
-        "Engineered a full-stack AML (Anti-Money Laundering) compliance platform with a React/TypeScript frontend and FastAPI backend. The platform features a document analysis system powered by Retrieval-Augmented Generation (RAG) that helps compliance analysts quickly search and analyze regulatory documents, reducing their review time by 30% through intelligent semantic search and automated information retrieval",
-        "Built an enterprise chatbot interface that allows users to ask questions about compliance documents in natural language. The system uses OpenAI embeddings to understand queries and Pinecone vector database to retrieve relevant document sections, providing accurate answers with source citations to help analysts navigate complex regulatory requirements",
-        "Set up comprehensive CI/CD pipelines with GitHub Actions that automatically run tests (Pytest for Python backend, Jest for React frontend) on every code commit. Implemented validation gates to prevent buggy code from reaching production, achieving 85% code coverage across the codebase to ensure reliability",
-        "Developed a file validation tool that uses AI agents to automatically check uploaded files for common errors and data quality issues. The system detects problems using rule-based validation and leverages AI to suggest specific fixes, helping users correct issues before they cause downstream problems",
-        "Created development documentation and established coding standards for the team, including API design guidelines, authentication best practices, and Git workflow procedures. This standardization helped new developers get up to speed faster when joining projects"
+        "Sole frontend developer owning architecture, performance, and delivery of an AI-driven AML compliance platform using React and TypeScript, building dashboards and workflows for analyst-driven case review",
+        "Built backend AI services in Python using LLM orchestration tools to support document analysis and case-level intelligence",
+        "Created and optimized GitHub Actions CI/CD pipelines, running 200+ end-to-end tests and cutting integration time from 30 to 20 minutes, improving release confidence in a rapidly evolving codebase",
+        "Implemented a retrieval-augmented generation (RAG) pipeline to scan and synthesize documents for data-backed decisions",
+        "Designed and shipped a full-stack enterprise AI chatbot supporting multiple business personas to enable domain-specific question answering across internal documents",
+        "Solely architected and delivered an end-to-end ETL pipeline using Azure Data Factory and SQL, eliminating 40–50 hours/week of manual reporting effort"
       ],
-      technologies: ["React", "TypeScript", "FastAPI", "Python", "OpenAI", "Pinecone", "RAG", "GitHub Actions"]
-    },
-    {
-      role: "Application Development Analyst",
-      company: "Accenture",
-      period: "Sept 2022 – Dec 2023",
-      location: "Mumbai, India",
-      highlights: [
-        "Designed and built microservices for an insurance processing system using Java 8 and Spring Boot. Implemented Circuit Breaker pattern to handle service failures gracefully and API Gateway pattern to manage routing between services. These architectural improvements made the system more resilient and scalable, with faster response times even during peak loads",
-        "Created data extraction pipelines to parse and process insurance documents in various formats. The pipeline handles JSON payloads from 40+ different document types (claims, policies, endorsements, etc.), validates data integrity, transforms it into a standardized format, and achieves 95% accuracy in extracting critical information like policy numbers, coverage amounts, and dates",
-        "Integrated Apache Kafka into the system to enable real-time event streaming between microservices. When one service processes a claim, it publishes events that other services consume to trigger their workflows. Also optimized AWS infrastructure (EC2 instances, S3 storage) to reliably handle over 10,000 daily transactions with 99.9% uptime",
-        "Mentored and trained 5 new team members on the insurance system workflows, codebase architecture, and development practices. Conducted regular knowledge-sharing sessions to help them understand the business domain and technical implementation"
-      ],
-      technologies: ["Java 8", "Spring Boot", "Apache Kafka", "AWS EC2", "AWS S3", "Microservices"]
+      technologies: ["React", "TypeScript", "Python", "GitHub Actions", "RAG", "Azure Data Factory", "SQL"]
     },
     {
       role: "Application Development Associate",
       company: "Accenture",
-      period: "Jun 2021 – Aug 2022",
+      period: "Jun 2021 – Dec 2023",
       location: "Mumbai, India",
       highlights: [
-        "Built full-stack web applications with React for interactive user interfaces, Next.js for server-side rendering and SEO optimization, and Node.js/Express for RESTful backend APIs. Focused on creating scalable architecture patterns and optimizing performance through techniques like code splitting, lazy loading, and efficient state management",
-        "Designed and implemented comprehensive error handling across all application layers - from frontend validation to backend API error responses to database transaction handling. Set up centralized logging to track errors and application behavior, which helped the team quickly identify and fix production issues, reducing incident response times",
-        "Automated the validation of JSON data files using Python scripts to catch data quality issues early. The scripts check for missing fields, invalid formats, type mismatches, and business rule violations. This automation increased data accuracy from initial processing to 80% better quality, preventing errors from propagating downstream",
-        "Created a test automation framework using Selenium WebDriver to automatically generate test data for QA environments. The framework simulates user interactions with the web UI to create realistic test datasets, cutting manual data creation time in half and allowing testers to focus on actual testing rather than data setup"
+        "Built client-facing frontends with React, TypeScript, and SCSS, delivering dashboards, authentication, and data-dense UI across 4+ insurance modules within a Model-View-Controller (MVC) architecture",
+        "Developed and integrated Node.js/Express backend services, exposing RESTful APIs across multiple business verticals in a microservices-based ecosystem",
+        "Designed PostgreSQL schemas and optimized SQL queries to support CRUD operations on large transactional datasets",
+        "Supported AWS deployments using EC2, RDS, DynamoDB, Lambda, and Auto Scaling across multiple environments",
+        "Built and maintained Jenkins CI/CD pipelines to automate builds and test execution reducing manual deployment overhead",
+        "Practiced Test-Driven Development (TDD), writing 100+ unit and integration tests with Jest and React Testing Library",
+        "Collaborated in Agile/Scrum teams across 25+ sprint cycles, contributing to sprint planning, daily stand-ups and code reviews",
+        "Automated JSON payload validation between services using Python, saving 5–8 hours of manual testing effort per release"
       ],
-      technologies: ["React", "Next.js", "Node.js", "Express", "Python", "Selenium"]
+      technologies: ["React", "TypeScript", "SCSS", "Node.js", "Express", "PostgreSQL", "AWS", "Jenkins", "Jest", "Python"]
     }
   ];
 
