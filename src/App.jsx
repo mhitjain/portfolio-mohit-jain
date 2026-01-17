@@ -577,7 +577,7 @@ export default function Portfolio() {
                     To gain a formal computer science foundation and deepen my expertise, I pursued an <span className="text-blue-700 dark:text-blue-400 font-semibold">M.S. in Software Engineering at Northeastern University</span>. This program allowed me to dive into advanced topics in AI, distributed systems, and software architecture.
                   </p>
                   <p className="text-base">
-                    During my studies, I completed a <span className="text-purple-700 dark:text-purple-400 font-semibold">6-month co-op at TekLink International</span> as a Software Development Engineer Intern, where I:
+                    During my studies, I completed a <span className="text-purple-700 dark:text-purple-400 font-semibold">6-month co-op at Hinduja Global Solutions</span> as a Software Development Engineer Intern, where I:
                   </p>
                   <div className="space-y-2 pl-4">
                     <div className="flex items-start gap-2">
@@ -610,7 +610,7 @@ export default function Portfolio() {
                 </div>
                 <div className="bg-white dark:bg-slate-800/40 border border-purple-300 dark:border-purple-500/20 rounded-lg p-4 text-center hover:border-purple-500 dark:hover:border-purple-500/40 transition-all">
                   <div className="text-2xl font-bold text-purple-700 dark:text-purple-400 mb-1">6 Months</div>
-                  <div className="text-xs text-slate-600 dark:text-slate-400">TekLink Co-op • AI Engineering</div>
+                  <div className="text-xs text-slate-600 dark:text-slate-400">Hinduja Global Solutions Co-op • AI Engineering</div>
                   <div className="text-xs text-slate-500 dark:text-slate-500 mt-1">Boston, MA</div>
                 </div>
                 <div className="bg-white dark:bg-slate-800/40 border border-cyan-300 dark:border-cyan-500/20 rounded-lg p-4 text-center hover:border-cyan-500 dark:hover:border-cyan-500/40 transition-all">
