@@ -176,6 +176,26 @@ export default function Portfolio() {
     }
   ];
 
+  const blogPosts = [
+    {
+      id: 'blog-1',
+      title: '🤖👨‍🍳 The Thinking Chef: Chain-of-Thought Prompting',
+      date: 'Jan 2026',
+      description: 'Discover the power of Chain-of-Thought prompting through an interactive, musical journey with Chef-Bot 3000. Learn why showing your reasoning matters just as much as getting the right answer in prompt engineering.',
+      tags: ['AI', 'Prompt Engineering', 'LLM', 'Machine Learning'],
+      link: '/blogs/blog1.html'
+    }
+    // Add more blogs like:
+    // {
+    //   id: 'blog-2',
+    //   title: 'Another Blog Title',
+    //   date: 'Dec 2025',
+    //   description: 'Brief description of your blog...',
+    //   tags: ['Tag1', 'Tag2'],
+    //   link: '/blogs/blog2.html'
+    // }
+  ];
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 dark:from-slate-950 dark:via-blue-950 dark:to-slate-950 text-slate-900 dark:text-white overflow-hidden relative transition-colors duration-300">
       {/* Theme Toggle Button */}
@@ -277,6 +297,10 @@ export default function Portfolio() {
               <a href="#projects" className="flex items-center gap-2 px-6 py-3 border border-slate-400 dark:border-slate-600 rounded-lg hover:border-purple-500 hover:bg-purple-500/10 transition-all duration-300 backdrop-blur-sm">
                 <Code2 className="w-5 h-5" />
                 View Projects
+              </a>
+              <a href="#blogs" className="flex items-center gap-2 px-6 py-3 border border-slate-400 dark:border-slate-600 rounded-lg hover:border-green-500 hover:bg-green-500/10 transition-all duration-300 backdrop-blur-sm">
+                <ExternalLink className="w-5 h-5" />
+                View Blogs
               </a>
             </div>
 
@@ -404,6 +428,61 @@ export default function Portfolio() {
                   </div>
                 </div>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+      {/* Blogs Section */}
+      <section id="blogs" className="py-20 px-6 relative z-10">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex items-center gap-3 mb-12 animate-fade-in">
+            <Terminal className="w-8 h-8 text-green-600 dark:text-green-400" />
+            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-green-600 to-cyan-600 dark:from-green-400 dark:to-cyan-400 bg-clip-text text-transparent">
+              Blog & Articles
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            {blogPosts.map((post) => (
+              <a 
+                key={post.id}
+                href={post.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative bg-gradient-to-br from-white to-slate-50 dark:from-slate-900/80 dark:to-slate-800/50 backdrop-blur-sm border border-slate-300 dark:border-slate-700/50 rounded-2xl p-6 hover:border-green-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-green-500/20 hover:-translate-y-2 overflow-hidden flex flex-col"
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-green-600/0 via-green-600/5 to-cyan-600/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
+                <div className="relative flex-1 flex flex-col">
+                  <div className="flex items-start justify-between mb-3">
+                    <div className="flex-1">
+                      <h3 className="text-lg md:text-xl font-bold text-green-700 dark:text-green-300 group-hover:text-green-600 dark:group-hover:text-green-200 transition-colors mb-1 line-clamp-2">
+                        {post.title}
+                      </h3>
+                      <p className="text-xs md:text-sm text-slate-500 dark:text-slate-400">{post.date}</p>
+                    </div>
+                    <ExternalLink className="w-5 h-5 text-slate-500 dark:text-slate-400 group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors group-hover:rotate-45 duration-300 flex-shrink-0 ml-2" />
+                  </div>
+
+                  <p className="text-slate-700 dark:text-slate-300 text-sm leading-relaxed mb-4 flex-grow">
+                    {post.description}
+                  </p>
+
+                  {post.tags && post.tags.length > 0 && (
+                    <div className="flex flex-wrap gap-2 mb-4">
+                      {post.tags.map((tag, idx) => (
+                        <span key={idx} className="inline-block px-3 py-1 bg-green-100 dark:bg-green-500/10 text-green-700 dark:text-green-300 text-xs font-semibold rounded-full border border-green-300 dark:border-green-500/30">
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  )}
+
+                  <div className="inline-flex items-center gap-2 text-green-700 dark:text-green-400 font-semibold text-sm group-hover:gap-3 transition-all">
+                    Read Full Article
+                    <ChevronRight className="w-4 h-4" />
+                  </div>
+                </div>
+              </a>
             ))}
           </div>
         </div>
