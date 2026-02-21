@@ -319,59 +319,6 @@ export default function Portfolio() {
         </div>
       </section>
 
-      {/* Experience Section */}
-      <section className="py-20 px-6 relative z-10">
-        <div className="max-w-6xl mx-auto">
-          <div className="flex items-center gap-3 mb-12 animate-fade-in">
-            <Briefcase className="w-8 h-8 text-blue-600 dark:text-blue-400" />
-            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent">
-              Experience
-            </h2>
-          </div>
-
-          <div className="space-y-8">
-            {experience.map((exp, idx) => (
-              <div key={idx} className="group relative bg-gradient-to-br from-white to-slate-50 dark:from-slate-900/80 dark:to-slate-800/50 backdrop-blur-sm border border-slate-300 dark:border-slate-700/50 rounded-2xl p-8 hover:border-blue-500/50 transition-all duration-500 hover:shadow-2xl hover:shadow-blue-500/20 hover:-translate-y-1">
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-600/0 via-blue-600/5 to-purple-600/0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-2xl"></div>
-                <div className="relative">
-                  <div className="flex flex-col md:flex-row md:items-start md:justify-between mb-2">
-                    <div>
-                      <h3 className="text-2xl font-bold text-blue-700 dark:text-blue-300 mb-1 group-hover:text-blue-600 dark:group-hover:text-blue-200 transition-colors">
-                        {exp.role}
-                      </h3>
-                      <p className="text-xl text-slate-700 dark:text-slate-300">{exp.company}</p>
-                      {exp.location && (
-                        <p className="text-sm text-slate-600 dark:text-slate-400 mt-1">{exp.location}</p>
-                      )}
-                    </div>
-                    <span className="text-slate-600 dark:text-slate-400 mt-2 md:mt-0 font-mono text-sm">{exp.period}</span>
-                  </div>
-                  
-                  <ul className="space-y-3 mb-4">
-                    {exp.highlights.map((highlight, i) => (
-                      <li key={i} className="flex items-start gap-2 text-slate-700 dark:text-slate-300 text-sm leading-relaxed">
-                        <ChevronRight className="w-5 h-5 text-blue-600 dark:text-blue-400 mt-0.5 flex-shrink-0" />
-                        <span>{highlight}</span>
-                      </li>
-                    ))}
-                  </ul>
-                  
-                  {exp.technologies && (
-                    <div className="flex flex-wrap gap-2 pt-4 border-t border-slate-300 dark:border-slate-700/50">
-                      {exp.technologies.map((tech, i) => (
-                        <span key={i} className="px-3 py-1 bg-blue-100 dark:bg-blue-500/10 border border-blue-300 dark:border-blue-500/20 rounded-md text-xs text-blue-800 dark:text-blue-300 font-mono">
-                          {tech}
-                        </span>
-                      ))}
-                    </div>
-                  )}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Projects Section */}
       <section id="projects" className="py-20 px-6 relative z-10">
         <div className="max-w-6xl mx-auto">
