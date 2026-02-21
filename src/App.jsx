@@ -577,7 +577,7 @@ export default function Portfolio() {
                   <div className="grid grid-cols-2 gap-2 pl-4">
                     <div className="flex items-center gap-2">
                       <ChevronRight className="w-4 h-4 text-blue-600 dark:text-blue-400 flex-shrink-0" />
-                      <span className="text-sm">Java/Spring Boot microservices</span>
+                      <span className="text-sm">Node.js/Express microservices</span>
                     </div>
                     <div className="flex items-center gap-2">
                       <ChevronRight className="w-4 h-4 text-blue-600 dark:text-blue-400 flex-shrink-0" />
